@@ -71,7 +71,7 @@ export class GenerativeModel {
       this.model = modelParams.model;
     } else {
       // If path is not included, assume it's a non-tuned model.
-      this.model = `models/${modelParams.model}`;
+      this.model = modelParams.model;
     }
     this.generationConfig = modelParams.generationConfig || {};
     this.safetySettings = modelParams.safetySettings || [];
